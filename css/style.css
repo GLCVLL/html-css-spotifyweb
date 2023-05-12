@@ -11,33 +11,80 @@ body{
     font-family: 'Montserrat';
 }
 
-.container {
+.wrapper {
     display: flex;
     height: calc(100vh - 80px);
 }
-  
+
+/*UTILS*/
+
+.flex-end{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+    width: 60px;
+    background-color: black;
+    color: white;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.sidebar .sidebar-top img{
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.sidebar .sidebar-top i{
+    padding: 5px 0;
+}
+
+.sidebar .sidebar-bottom i{
+    padding: 10px 0;
+}
+
+/*HEADER*/
+
 .content {
     display: flex;
     flex-direction: column;
 }
-
-.sidebar {
-    width: 50px;
-    background-color: black;
-}
   
-.header {
+.content .header {
     height: 80px;
     background-color: #282828;
     position: fixed;
     top: 0;
     z-index: 1;
-    width: 100%;
+    width: calc(100% - 60px);
+}
+
+.content .header a{
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 12px;
 }
   
-.main-text {
+.content .main-text {
     overflow: auto;
-    padding: 20px;
+    padding: 90px 30px;
 }
 
 /*FOOTER*/
