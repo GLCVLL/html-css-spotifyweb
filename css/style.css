@@ -58,6 +58,7 @@ a:hover{
     padding-bottom: 5px;
 }
 
+
 /*MAIN*/
 
 main{
@@ -127,6 +128,10 @@ footer {
     .sidebar-menu a{
         display: flex;
         align-items: center;
+    }
+
+    .icon{
+        max-width: 30px;
     }
 
 }
