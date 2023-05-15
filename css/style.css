@@ -45,17 +45,18 @@ a:hover{
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .sidebar-top .d-none{
     display: none;
 }
 
-.sidebar-top img{
+.sidebar img{
     padding: 0 15px;
+    padding-bottom: 5px;
 }
-
-.sidebar
 
 /*MAIN*/
 
@@ -112,11 +113,22 @@ footer {
 
     .sidebar-top .d-none{
         display: flex;
+        padding-right: 50px;
     }
 
     .sidebar-top .d-flex{
         display: none;
     }
+
+    .sidebar-menu li{
+        display: flex;
+    }
+    
+    .sidebar-menu a{
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 880px){
