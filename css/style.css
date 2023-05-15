@@ -45,7 +45,8 @@ a:hover{
 /*SIDEBAR*/
 
 .sidebar{
-    flex: 0 0 60px;
+    height: calc(100vh - 80px);
+    width: 60px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -117,13 +118,26 @@ header{
 
 .navbar{
     display: flex;
-    padding: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .navbar li{
     padding: 0 10px;
-    flex-basis: calc(100% / 5);
+    flex-basis: 50%;
+    font-size: 10px;
+}
+
+.navbar li:nth-child(-n+4){
+    flex-basis: 25%;
+}
+
+/* GALLERY */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*FOOTER*/
