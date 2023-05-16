@@ -56,7 +56,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 
@@ -71,6 +71,9 @@ a:hover{
 
 .playlist{
     color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .playlist h4{
@@ -81,6 +84,10 @@ a:hover{
     background-color: lightgrey;
     padding: 5px;
     color: black;
+}
+
+.playlist-menu ul{
+    margin: 10px 0;
 }
 
 .playlist-menu li{
