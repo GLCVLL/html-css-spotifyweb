@@ -19,6 +19,11 @@ body{
 
 /*UTILS*/
 
+.container{
+    max-width: 420px;
+    /*margin: 0 auto;*/
+}
+
 img{
     max-width: 100%;
 }
@@ -51,7 +56,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 
@@ -235,6 +240,141 @@ footer {
     background-color: #282828;
 }
 
+.footer-elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER LEFT*/
+
+.ft-left ul,
+.ft-right ul{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.ft-left li{
+    padding: 0 5px;
+}
+
+.ft-left img{
+    width: 40px;
+    height: 40px;
+}
+
+.ft-left li .title-text{
+    font-size: 10px;
+    color: lightgrey;
+}
+
+.ft-left li:last-child a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px 0;
+}
+
+/* FOOTER CENTER */
+
+.ft-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+}
+
+.ft-center ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ft-center-top li a{
+    padding: 0 5px;
+}
+
+.ft-center-bottom li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.ft-center-bottom time{
+    color: white;
+    font-size: 8px;
+}
+
+.ft-center .progress-bar-center{
+    background-color: lightgrey;
+    height: 3px;
+    width: 30vw;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.progress-bar-center .value-center{
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    background-color: yellow;
+    position: relative;
+    display: none;
+}
+
+.progress-bar-center .marker-center{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress-bar-center:hover .value-center{
+    display: block;
+}
+
+/* FOOTER RIGHT*/
+
+.ft-right li a{
+    padding: 0 5px;
+}
+
+.ft-right .progress-bar-right{
+    background-color: lightgrey;
+    height: 3px;
+    width: 10vw;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar-right .value-right{
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: yellow;
+    position: relative;
+    display: none;
+}
+
+.progress-bar-right .marker-right{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.progress-bar-right:hover .value-right{
+    display: block;
+}
+  
 
 /********************************/
 /******** RESPONSIVE ************/
@@ -245,6 +385,11 @@ footer {
 }
 
 @media screen and (min-width: 640px){
+    
+    .container{
+        max-width: 630px;
+    }
+
     .sidebar{
         flex-basis: 250px;
     }
@@ -289,9 +434,23 @@ footer {
         flex-basis: calc(100% / 4);
     }
 
+    .ft-left li:last-child{
+        display: flex;
+        padding: 0 10px;
+    }
+
+    .ft-left li:last-child a{
+        padding: 0 5px;
+    }
+
 }
 
 @media screen and (min-width: 880px){
+
+    .container{
+        max-width: 870px;
+    }
+
     .gallery .column,
     .gallery-sug .column-sug,
     .gallery-art .column-art {
@@ -300,5 +459,9 @@ footer {
 }
 
 @media screen and (min-width: 1200px){
+
+    .container{
+        max-width: 1180px;
+    }
 
 }
